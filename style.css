@@ -43,8 +43,16 @@ header {
 }
 
 #themes {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 20px;
+    background-color: #252526;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#themes:hover {
+    background-color: #2d2d2e;
 }
