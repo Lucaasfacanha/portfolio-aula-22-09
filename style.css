@@ -1,5 +1,13 @@
-body {
+body{
     background-color: #0e141b;
+    margin: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
 }
 
 header {
@@ -10,8 +18,12 @@ header {
 .header {
     display: flex;
     align-items: center;
-    padding: 7px;
+    padding: 15px 15px 0 15px;
     gap: 4px;
+}
+
+.header:hover #NomeHeader {
+    color: #ff5277;
 }
 
 #NomeHeader {
@@ -31,8 +43,16 @@ header {
 }
 
 #themes {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 20px;
+    background-color: #252526;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#themes:hover {
+    background-color: #1c1c1d;
 }
