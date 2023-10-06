@@ -12,6 +12,12 @@ main {
     padding: 50px 50px 0 50px;
 }
 
+@media screen and (min-width: 1145px) {
+    main{
+        padding: 50px 170px 0 170px;
+    }
+}
+
 button {
     margin: 0;
     padding: 0;
