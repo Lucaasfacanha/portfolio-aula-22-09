@@ -19,6 +19,7 @@ main {
 
 footer {
   display: flex;
+  justify-content: space-between;
   bottom: 0;
   position: fixed;
   padding: 20px;
@@ -169,4 +170,9 @@ header {
 .digitalcollege:hover{
   color: #fb1d4d;
   border-bottom: solid 4px #fb1d4d;
+}
+
+#iconeFooter {
+  display: flex;
+  gap: 5px;
 }
