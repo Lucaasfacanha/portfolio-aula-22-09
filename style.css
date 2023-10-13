@@ -22,8 +22,21 @@ footer {
   justify-content: space-between;
   bottom: 0;
   position: fixed;
+  width: 100%;
   padding: 20px;
   border-top: 1px solid #252526;
+}
+
+@media screen and (min-width: 670px) {
+  footer {
+    padding: 20px 60px 20px 60px;
+  }
+}
+
+@media screen and (min-width: 1145px) {
+  footer {
+    padding: 20px 170px 20px 170px;
+  }
 }
 
 @media screen and (min-width: 670px) {
