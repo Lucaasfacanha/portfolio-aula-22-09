@@ -8,7 +8,7 @@ body{
   margin: 0;
 }
 
-a, h3 {
+a, p, h3, h1 {
   color: white;
   text-decoration: none;
 }
@@ -135,4 +135,30 @@ header {
 
 #textHello:hover {
   color: #fb1d4d;
+}
+
+#FacoSites {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 670px) {
+  #FacoSites {
+      font-size: 80px;
+  }
+}
+
+#TextMain{
+  font-family: 'Cascadia code light';
+  font-size: 25px;
+}
+
+.digitalcollege{
+  border-bottom: solid 4px #393a3a;
+}
+
+.digitalcollege:hover{
+  color: #fb1d4d;
+  border-bottom: solid 4px #fb1d4d;
 }
