@@ -17,15 +17,23 @@ main {
   padding: 20px;
 }
 
+footer {
+  display: flex;
+  bottom: 0;
+  position: fixed;
+  padding: 20px;
+  border-top: 1px solid #252526;
+}
+
 @media screen and (min-width: 670px) {
   main{
-      padding: 35px 60px 0 60px;
+      padding: 60px 60px 0 60px;
   }
 }
 
 @media screen and (min-width: 1145px) {
   main{
-      padding: 50px 170px 0 170px;
+      padding: 100px 170px 0 170px;
   }
 }
 
