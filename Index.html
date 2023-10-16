@@ -5,6 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="b12b66f2-ca6e-4b10-b4eb-0268bd632cec.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Façanha</title>
+    <script src="menu.js" defer></script>
+
   </head>
   <body>
     <header>
@@ -25,22 +27,22 @@
               <nav id="menuHeader">
                   <div  id="nomeHome">
                       <a href="">
-                          01 Home
+                          01 Inicio
                       </a>
                   </div>
                   <div>
                       <a href="" class="nomeHeaderMenu">
-                          02 writing
+                          02 Projetos
                       </a>
                   </div>
                   <div>
                       <a href="" class="nomeHeaderMenu">
-                          03 notes
+                          03 Especialidades
                       </a>
                   </div>
                   <div>
                       <a href="" class="nomeHeaderMenu">
-                          04 about
+                          04 Contato
                       </a>
                   </div>
               </nav>
@@ -50,14 +52,40 @@
           <button  class="themes">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z"></path></svg>
           </button>
+
+
           </div>
-          <div id="linhaThmes">
-          <button class="themes">
+          
+          <div id="linhaThemes">    
+          <button class="themes" id="botaoAbrirMenu">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style=" height: 24px; width: 24px; stroke: currentcolor; stroke-width: 3; ">
                       <path d="M2 16h28M2 24h28M2 8h28">
                       </path>
               </svg>
           </button>
+
+          <div class="menuMobile" id="menuMobile2">
+            <div class="botaoFechar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" id="botaoFechar" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="" class="liMobile">01 Inicio</a></li>
+                    
+                    <li><a href=""  class="liMobile">02 Projetos</a></li>
+                    
+                    <li><a href=""  class="liMobile">03 Especialidades</a></li>
+                    
+                    <li><a href=""  class="liMobile">04 Contato</a></li>
+                </ul>
+            </nav>
+          </div>
+
+          <div class="overlayMenu" id="overlayMenu"></div>
+
           </div>
       </div>
 </header>

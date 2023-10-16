@@ -17,28 +17,6 @@ main {
   padding: 20px;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  padding: 20px;
-  border-top: 1px solid #252526;
-}
-
-@media screen and (min-width: 670px) {
-  footer {
-    padding: 20px 60px 20px 60px;
-  }
-}
-
-@media screen and (min-width: 1145px) {
-  footer {
-    padding: 20px 170px 20px 170px;
-  }
-}
-
 @media screen and (min-width: 670px) {
   main{
       padding: 60px 60px 0 60px;
@@ -47,7 +25,7 @@ footer {
 
 @media screen and (min-width: 1145px) {
   main{
-      padding: 100px 170px 0 170px;
+      padding: 100px 110px 0 110px;
   }
 }
 
@@ -78,11 +56,32 @@ header {
 
 @media screen and (min-width: 1145px) {
   .header {
-      padding: 50px 170px 0  170px;
+      padding: 50px 100px 0  100px;
   }
   
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #252526;
+}
+
+@media screen and (min-width: 670px) {
+  footer {
+    padding: 20px 60px 20px 60px;
+  }
+}
+
+@media screen and (min-width: 1145px) {
+  footer {
+    padding: 20px 110px 20px 110px;
+  }
+}
 
 .header:hover #NomeHeader {
   color: #ff5277;
@@ -120,7 +119,7 @@ header {
 }
 
 @media screen and (min-width: 980px) {
-  #linhaThmes {
+  #linhaThemes {
       display: none;
   }
 }
@@ -147,6 +146,63 @@ header {
 .nomeHeaderMenu:hover {
   padding-bottom: 5px;
   border-bottom: solid 4px #393a3a;
+}
+
+.menuMobile{
+  background-color: #0e141b;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999999;
+  width: 0;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.menuMobile.abrirMenu{
+  width: 70%;
+}
+
+.menuMobile.abrirMenu ~ .overlayMenu{
+  display: block;
+}
+
+.botaoFechar {
+  color: #fb1d4d;
+  padding: 20px 4%;
+}
+
+#botaoFechar:hover{
+  background-color: #fb1d4d;
+  color: white;
+}
+
+.menuMobile nav ul {
+  text-align: right;
+}
+
+.liMobile{
+  font-weight: bold;
+  font-size: 21px;
+  padding: 20px 8%;
+  display: block;
+}
+
+.liMobile:hover{
+  background-color: #fb1d4d;
+  color: #0e141b;
+}
+
+.overlayMenu {
+  background-color: rgba(0, 0, 0, 0.651);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888888;
+  display: none;
 }
 
 #textHello {
