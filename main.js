@@ -1,17 +1,42 @@
 import './style.css'
 
-let botaoAbrirMenu = document.getElementById('botaoAbrirMenu')
-let menu = document.getElementById('menuMobile2')
-let overlay = document.getElementById('overlayMenu')
+function menuMobile () {
 
-botaoAbrirMenu.addEventListener('click', ()=>{
-    menu.classList.add('abrirMenu')
-})
+  const botaoAbrirMenu = document.getElementById('botaoAbrirMenu')
+  const menu = document.getElementById('menuMobile2')
+  const overlay = document.getElementById('overlayMenu')
 
-menu.addEventListener('click', ()=>{
-    menu.classList.remove('abrirMenu')
-})
+  botaoAbrirMenu.addEventListener('click', ()=>{
+      menu.classList.add('abrirMenu')
+  })
 
-overlay.addEventListener('click', ()=>{
-    menu.classList.remove('abrirMenu')
+  menu.addEventListener('click', ()=>{
+      menu.classList.remove('abrirMenu')
+  })
+
+  overlay.addEventListener('click', ()=>{
+      menu.classList.remove('abrirMenu')
+  })
+}
+menuMobile();
+
+
+function main (){
+  const x = document.querySelector('#x');
+  const y = document.querySelector('#y');
+  const me = document.querySelector('#media');
+
+  document.body.addEventListener('click', (event) => {
+    x.innerHTML = 'A posição de X é: ' + event.clientX; 
+    y.innerHTML = 'A posição de Y é: ' + event.clientY;
+    const media = (event.clientX + event.clientY) / 2; 
+    me.innerHTML = 'A média é: ' + media;
 })
+  document.body.style.height = '100vh'
+
+  
+  
+
+}
+
+main ();
