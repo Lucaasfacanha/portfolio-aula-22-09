@@ -25,12 +25,15 @@ function main (){
   const x = document.querySelector('#x');
   const y = document.querySelector('#y');
   const me = document.querySelector('#media');
+  const body = document.body;
 
   document.body.addEventListener('click', (event) => {
     x.innerHTML = 'A posição de X é: ' + event.clientX; 
     y.innerHTML = 'A posição de Y é: ' + event.clientY;
     const media = (event.clientX + event.clientY) / 2; 
     me.innerHTML = 'A média é: ' + media;
+
+    body.style.background = '#' + media;
 })
   document.body.style.height = '100vh'
 
