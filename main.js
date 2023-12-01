@@ -34,12 +34,7 @@ function main (){
     me.innerHTML = 'A média é: ' + media;
 
     body.style.background = '#' + media;
-})
+}) 
   document.body.style.height = '100vh'
-
-  
-  
-
 }
-
 main ();
